@@ -51,14 +51,13 @@ mssg "Downloading & Installing Miniconda ..."
 miniconda=Miniconda3-4.0.5-Linux-x86_64.sh
 if [[ ! -f $miniconda ]]; then
     wget --quiet http://repo.continuum.io/miniconda/$miniconda
+    chmod +x $miniconda
+    ./$miniconda -b -p /home/vagrant/miniconda
+    echo 'export PATH="/home/vagrant/miniconda/bin:$PATH"' >> /home/vagrant/.bashrc
+    source /home/vagrant/.bashrc
+    chown -R vagrant:vagrant /home/vagrant/miniconda
+    /home/vagrant/miniconda/bin/conda install conda-build anaconda-client anaconda-build -y -q
 fi
-chmod +x $miniconda
-./$miniconda -b -p /home/vagrant/miniconda
-
-echo 'export PATH="/home/vagrant/miniconda/bin:$PATH"' >> /home/vagrant/.bashrc
-source /home/vagrant/.bashrc
-chown -R vagrant:vagrant /home/vagrant/miniconda
-/home/vagrant/miniconda/bin/conda install conda-build anaconda-client anaconda-build -y -q
 
 ################################################
 # Essential Python packages : pandas, scikit-learn, xgboost
