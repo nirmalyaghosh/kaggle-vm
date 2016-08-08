@@ -11,5 +11,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.provision :shell, path: 'provision.sh', keep_color: true
 
+  config.vm.synced_folder "../kaggle", "/home/vagrant/kaggle", create: true
+
 end
 
