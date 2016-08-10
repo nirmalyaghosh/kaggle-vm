@@ -66,8 +66,12 @@ conda_install scikit-learn
 
 mssg "Installing XGBoost"
 git clone --recursive https://github.com/dmlc/xgboost
+chown -R vagrant:vagrant /home/vagrant/xgboost
 cd xgboost; make -j4
 
+/home/vagrant/miniconda/bin/pip install -r /home/vagrant/requirements.txt
+
+################################################
 # R
 mssg "Installing R"
 apt-fast -y install r-base
