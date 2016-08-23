@@ -16,6 +16,6 @@ I assume you already have VirtualBox (version 5+) installed, if you don't, pleas
   - pandas, 0.18.1
   - scikit-learn, 0.17.1
   - scipy, 0.18.0
-  - xgboost
+  - xgboost, 0.6a2
   - Some other packages, refer to requirements.txt
 - R version 3.0.2

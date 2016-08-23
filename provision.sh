@@ -5,6 +5,7 @@
 # 
 # Credits :
 # http://stackoverflow.com/questions/25321139/vagrant-installing-anaconda-python
+# http://stackoverflow.com/a/35493714
 ################################################
 
 function mssg {
@@ -65,9 +66,7 @@ conda_install pandas
 conda_install scikit-learn
 
 mssg "Installing XGBoost"
-git clone --recursive https://github.com/dmlc/xgboost
-chown -R vagrant:vagrant /home/vagrant/xgboost
-cd xgboost; make -j4
+/home/vagrant/miniconda/bin/pip install xgboost==0.6a2
 
 /home/vagrant/miniconda/bin/pip install -r /home/vagrant/requirements.txt
 
