@@ -14,4 +14,10 @@ Vagrant.configure(2) do |config|
 
   config.vm.synced_folder "../kaggle", "/home/vagrant/kaggle", create: true
 
+  config.vm.network "forwarded_port", guest: 9000, host: 9000, auto_correct: true
+  config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
+  config.vm.provision "shell", run: "always", inline: <<-SHELL
+    /home/vagrant/miniconda/bin/ipython notebook --notebook-dir=/home/vagrant/notebooks --port 9000 --ip=0.0.0.0 &
+  SHELL
+
 end
