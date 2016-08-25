@@ -1,6 +1,6 @@
 Kaggle Virtual Machine
 ================================
-Sets up a VirtualBox VM with the essential Python (pandas, scikit-learn, xgboost) and R packages installed.
+Sets up a VirtualBox VM with the essential Python (pandas, scikit-learn, xgboost, Keras) and R packages installed.
 A [Vagrant](https://www.vagrantup.com/) file is used to set up this VM, which runs on Ubuntu 14.04.
 
 ### Getting Started
@@ -19,5 +19,8 @@ I assume you already have VirtualBox (version 5+) installed, if you don't, pleas
   - xgboost, 0.6a2
   - Some other packages, refer to requirements.txt
 - R version 3.0.2
+- Deep Learning,
+  - Keras, 1.0.5
+  - Theano, 0.8.2
 
 In addition, an Ipython server is also installed. You can view it from the host's browser at http://localhost:9000.

@@ -71,6 +71,19 @@ mssg "Installing XGBoost"
 /home/vagrant/miniconda/bin/pip install -r /home/vagrant/requirements.txt
 
 ################################################
+# Theano, H5py, Keras
+mssg "Installing Theano dependencies"
+apt-fast install -y python-numpy python-scipy python-dev python-pip python-nose >/dev/null 2>&1
+apt-fast install -y g++ git libatlas3gf-base libatlas-dev >/dev/null 2>&1
+mssg "Installing Theano"
+/home/vagrant/miniconda/bin/conda install -y "theano==0.8.2" >/dev/null 2>&1
+mssg "Installing H5py"
+apt-fast install -y libhdf5-dev >/dev/null 2>&1
+/home/vagrant/miniconda/bin/pip install "h5py==2.6.0" >/dev/null 2>&1
+mssg "Installing Keras"
+/home/vagrant/miniconda/bin/pip install "keras==1.0.5" >/dev/null 2>&1
+
+################################################
 # R
 mssg "Installing R"
 apt-fast -y install r-base
