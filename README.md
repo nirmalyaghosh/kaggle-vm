@@ -20,7 +20,7 @@ I assume you already have VirtualBox (version 5+) installed, if you don't, pleas
   - Some other packages, refer to requirements.txt
 - R version 3.0.2
 - Deep Learning,
-  - Keras, 1.0.5
+  - Keras, 1.1.2
   - Theano, 0.8.2
 
 In addition, an Ipython server is also installed. You can view it from the host's browser at http://localhost:9000.
