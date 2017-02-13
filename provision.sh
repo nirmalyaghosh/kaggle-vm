@@ -81,7 +81,7 @@ mssg "Installing H5py"
 apt-fast install -y libhdf5-dev >/dev/null 2>&1
 /home/vagrant/miniconda/bin/pip install "h5py==2.6.0" >/dev/null 2>&1
 mssg "Installing Keras"
-/home/vagrant/miniconda/bin/pip install "keras==1.1.2" >/dev/null 2>&1
+/home/vagrant/miniconda/bin/pip install "keras==1.2.2" >/dev/null 2>&1
 mssg "Installing Tensorflow"
 export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.12.1-cp35-cp35m-linux_x86_64.whl
 /home/vagrant/miniconda/bin/pip install $TF_BINARY_URL >/dev/null 2>&1
