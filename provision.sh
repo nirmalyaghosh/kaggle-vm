@@ -95,4 +95,4 @@ apt-fast -y install r-base
 mssg "Installing IPython Notebook server"
 mkdir -p /home/vagrant/notebooks
 chown -R vagrant:vagrant /home/vagrant/notebooks
-/home/vagrant/miniconda/bin/pip install ipython[notebook]
+/home/vagrant/miniconda/bin/pip install notebook

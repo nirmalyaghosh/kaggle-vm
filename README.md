@@ -24,4 +24,4 @@ I assume you already have VirtualBox (version 5+) installed, if you don't, pleas
   - TensorFlow, 0.12.1
   - Theano, 0.8.2
 
-In addition, an Ipython server is also installed. You can view it from the host's browser at http://localhost:9000.
+In addition, an Ipython server is also installed. You can view it from the host's browser at http://localhost:9000. Password is *password*.
