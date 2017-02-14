@@ -62,8 +62,8 @@ fi
 
 ################################################
 # Essential Python packages : pandas, scikit-learn, xgboost
-conda_install pandas
-conda_install scikit-learn
+conda install "scikit-learn==0.18.1" -y -q
+conda_install "pandas==0.18.1" -y -q
 
 mssg "Installing XGBoost"
 /home/vagrant/miniconda/bin/pip install xgboost==0.6a2
