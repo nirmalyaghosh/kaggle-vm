@@ -21,7 +21,7 @@ I assume you already have VirtualBox (version 5+) installed, if you don't, pleas
 - R version 3.0.2
 - Deep Learning,
   - Keras, 1.2.2
-  - TensorFlow, 1.0.0
+  - TensorFlow, 1.0.1
   - Theano, 0.8.2
 
 In addition, an Ipython server is also installed. You can view it from the host's browser at http://localhost:9000. Password is *password*.
