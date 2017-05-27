@@ -14,14 +14,14 @@ I assume you already have VirtualBox (version 5+) installed, if you don't, pleas
 - Python, 3.5.2
   - numpy, 1.11.1
   - pandas, 0.18.1
-  - scikit-learn, 0.18.1
+  - scikit-learn, 0.18
   - scipy, 0.18.1
   - xgboost, 0.6a2
   - Some other packages, refer to requirements.txt
 - R version 3.0.2
 - Deep Learning,
-  - Keras, 1.2.2
-  - TensorFlow, 1.0.1
+  - Keras, 2.0.2
+  - TensorFlow, 1.1.0
   - Theano, 0.8.2
 
-In addition, an Ipython server is also installed. You can view it from the host's browser at http://localhost:9000. Password is *password*.
+In addition, a Jupyter notebook server is also installed. You can view it from the host's browser at http://localhost:9000. Password is *password*.
