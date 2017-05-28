@@ -55,8 +55,7 @@ fi
 
 ################################################
 # Essential Python packages : pandas, scikit-learn, xgboost
-/home/vagrant/anaconda/bin/conda install "scikit-learn==0.18" -y -q
-mssg "Installing XGBoost"
+/home/vagrant/anaconda/bin/conda install "scikit-learn==0.18.1" -y -q
 /home/vagrant/anaconda/bin/pip install xgboost==0.6a2
 /home/vagrant/anaconda/bin/pip install -r /home/vagrant/requirements.txt
 
@@ -80,10 +79,14 @@ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorf
 ################################################
 # R
 mssg "Installing R"
-apt-fast -y install r-base
+/home/vagrant/anaconda/bin/conda install -c r r-essentials
+mssg "Installing R-xgboost"
+apt-fast install -y gfortran >/dev/null 2>&1
+/usr/bin/git clone --recursive https://github.com/dmlc/xgboost
+cd xgboost; make -j4
+/home/vagrant/anaconda/bin/R -e "install.packages('xgboost', repos = 'http://cran.us.r-project.org')"
 
 ################################################
-mssg "Installing IPython Notebook server"
+mssg "Jupyter Notebook server"
 mkdir -p /home/vagrant/notebooks
 chown -R vagrant:vagrant /home/vagrant/notebooks
-/home/vagrant/anaconda/bin/pip install notebook
