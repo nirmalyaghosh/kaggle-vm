@@ -23,7 +23,7 @@ I assume you already have VirtualBox (version 5+) installed, if you don't, pleas
   - R packages `data.table`, `dplyr`, `glmnet`, `randomForest`, `xgboost` and 90+ other packages (refer to the [R Essentials bundle](https://docs.continuum.io/anaconda/r-language-pkg-docs#r-essentials-bundle))
 - Deep Learning,
   - Keras, 2.0.2
-  - TensorFlow, 1.1.0
+  - TensorFlow, 1.2.0
   - Theano, 0.8.2
 
 In addition, a Jupyter notebook server is also installed. You can view it from the host's browser at http://localhost:9000. Password is *password*.
