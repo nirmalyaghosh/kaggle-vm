@@ -1,3 +1,4 @@
 gensim==0.12.4
 mlxtend==0.4.2
 tabulate==0.7.5
+tqdm==4.11.2
