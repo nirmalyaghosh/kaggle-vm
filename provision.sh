@@ -70,7 +70,7 @@ mssg "Installing H5py"
 apt-fast install -y libhdf5-dev >/dev/null 2>&1
 /home/vagrant/anaconda/bin/pip install "h5py==2.6.0" >/dev/null 2>&1
 mssg "Installing Keras"
-/home/vagrant/anaconda/bin/conda install -c conda-forge keras=2.0.2
+/home/vagrant/anaconda/bin/conda install -c conda-forge keras=2.0.5
 
 mssg "Installing Tensorflow"
 export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.2.0-cp35-cp35m-linux_x86_64.whl

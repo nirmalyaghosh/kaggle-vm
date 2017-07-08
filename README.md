@@ -22,7 +22,7 @@ I assume you already have VirtualBox (version 5+) installed, if you don't, pleas
 - R version 3.3.2
   - R packages `data.table`, `dplyr`, `glmnet`, `randomForest`, `xgboost` and 90+ other packages (refer to the [R Essentials bundle](https://docs.continuum.io/anaconda/r-language-pkg-docs#r-essentials-bundle))
 - Deep Learning,
-  - Keras, 2.0.2
+  - Keras, 2.0.5
   - TensorFlow, 1.2.0
   - Theano, 0.8.2
 
