@@ -58,6 +58,8 @@ fi
 /home/vagrant/anaconda/bin/conda install "scikit-learn==0.18.1" -y -q
 /home/vagrant/anaconda/bin/pip install xgboost==0.6a2
 /home/vagrant/anaconda/bin/pip install -r /home/vagrant/requirements.txt
+/home/vagrant/anaconda/bin/pip install pystan
+/home/vagrant/anaconda/bin/pip install fbprophet
 
 ################################################
 # Theano, H5py, Keras

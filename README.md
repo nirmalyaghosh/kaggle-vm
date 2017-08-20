@@ -15,6 +15,7 @@ I assume you already have VirtualBox (version 5+) installed, if you don't, pleas
 - Python, 3.5.2
   - numpy, 1.11.1
   - pandas, 0.18.1
+  - prophet, 0.1.1
   - scikit-learn, 0.18.1
   - scipy, 0.18.1
   - xgboost, 0.6a2
